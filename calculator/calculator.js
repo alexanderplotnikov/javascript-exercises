@@ -1,25 +1,38 @@
-function add () {
-	
+function add (a, b) {
+	return a + b;
 }
 
-function subtract () {
-	
+function subtract (a, b) {
+	return a - b;
 }
 
-function sum () {
-	
+function sum (a) {
+	let res = 0;
+	for (let i of a){	
+		res += i;
+	}
+	return res;
 }
 
-function multiply () {
-	
+function multiply (a) {
+	let res = 1;
+	for (let i of a){	
+		res *= i;
+	}
+	return res;
 }
 
-function power() {
-	
+function power(a, b) {
+	return Math.pow(a, b);
 }
 
-function factorial() {
-	
+function factorial(a) {
+	res = 1;
+	for (let i = a; i > 0; i--){
+		res *= i;
+
+	}
+	return res;
 }
 
 module.exports = {
